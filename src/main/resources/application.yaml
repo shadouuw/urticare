@@ -1,0 +1,116 @@
+spring:
+  application:
+    name: urticare
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${DB_HOST:192.168.34.52}:${DB_PORT:5432}/${DB_NAME:innorpi_db}?sslmode=${DB_SSLMODE:disable}&currentSchema=app
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+
+  jpa:
+    show-sql: false
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: app
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: wsoei5888@gmail.com
+    password: ibpdduoxrfbnasgo
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 50MB
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,metrics,circuitbreakers"
+  endpoint:
+    health:
+      show-details: always
+
+settings:
+  issuer-uri: http://${spring.application.name}
+
+# ======================
+# OpenAPI / Swagger
+# ======================
+openapi:
+  service:
+    title: Urticare
+    version: 1.0.0
+    url: http://localhost:8080
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+# ======================
+# Auth / Security
+# ======================
+auth:
+  server:
+    issuer: http://${spring.application.name}
+    jwk-set-uri: http://${spring.application.name}/oauth2/jwks
+
+    client:
+      id: 2f3a7c1b-9d2e-4f3b-8c3d-5a6b7e8f9a0d
+      secret: s8f7K2nP4tZ9rQ1vX5mB3yH7wR0qL6cJ
+
+    security:
+      mfa:
+        enabled: false
+        otp-ttl-seconds: 300
+        method: MAIL
+        max-attempts: 5
+
+      jwt:
+        secret-key: s8f7K2nP4tZ9rQ1vX5mB3yH7wR0qL6cJ
+        expiration: 86400000
+
+      refresh-token:
+        expiration: 86400000
+
+# ======================
+# Gemini AI (chat assistant) — free tier, get a key at
+# https://aistudio.google.com/apikey and export GEMINI_API_KEY
+# ======================
+gemini:
+  api-key: ${GEMINI_API_KEY:AQ.Ab8RN6KF8kt9Ssj42au9ZKOktn3IeJ3GDWsGPam8_w_0TBJF6A}
+  model: ${GEMINI_MODEL:gemini-flash-latest}
+
+# ======================
+# App / File Upload
+# ======================
+app:
+  upload:
+    dir: ${UPLOAD_DIR:uploads}
+  base-url: ${APP_BASE_URL:http://local&host:8080}
+
+kind: Application
