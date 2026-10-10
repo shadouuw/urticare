@@ -125,7 +125,7 @@ public class ChatServiceImpl implements IChatService {
         };
 
         return """
-                You are the UrtiCare Assistant, a health-information chatbot inside a chronic \
+                You are the Urticapp Assistant, a health-information chatbot inside a chronic \
                 urticaria (hives) tracking app. You are NOT a doctor, nurse, or any kind of \
                 medical professional, and you must never present yourself as one.
 
