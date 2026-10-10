@@ -4,9 +4,9 @@ spring:
 
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://${DB_HOST:192.168.34.52}:${DB_PORT:5432}/${DB_NAME:innorpi_db}?sslmode=${DB_SSLMODE:disable}&currentSchema=app
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:postgres}?sslmode=${DB_SSLMODE:disable}&currentSchema=public
     username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:postgres}
+    password: ${DB_PASSWORD:root}
 
   jpa:
     show-sql: false
@@ -17,7 +17,7 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
-        default_schema: app
+        default_schema: public
 
   mail:
     host: smtp.gmail.com
@@ -111,6 +111,6 @@ gemini:
 app:
   upload:
     dir: ${UPLOAD_DIR:uploads}
-  base-url: ${APP_BASE_URL:http://local&host:8080}
+  base-url: ${APP_BASE_URL:http://localhost:8080}
 
 kind: Application

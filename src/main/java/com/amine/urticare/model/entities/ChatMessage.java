@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "chat_messages", schema = "app")
+@Table(name = "chat_messages", schema = "public")
 public class ChatMessage {
 
     @Id

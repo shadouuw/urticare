@@ -15,9 +15,9 @@ create table submissions
 alter table submissions
     owner to postgres;
 
-INSERT INTO app.submissions (id, created_at, frequency, itch_level, notes, pill_count, severity, updated_at, user_id) VALUES (1, '2026-05-28 12:06:27.207219', 'morning', 5, '', 3, 'moderate', '2026-05-28 12:06:27.207219', 'shadoouuww@gmail.com');
-INSERT INTO app.submissions (id, created_at, frequency, itch_level, notes, pill_count, severity, updated_at, user_id) VALUES (2, '2026-05-28 13:00:26.419030', 'morning', 10, '', 2, 'moderate', '2026-05-28 13:00:26.419030', 'shadoouuww@gmail.com');
-INSERT INTO app.submissions (id, created_at, frequency, itch_level, notes, pill_count, severity, updated_at, user_id) VALUES (3, '2026-06-06 10:18:38.205808', 'morning', 6, 'Stressante ', 2, 'moderate', '2026-06-06 10:18:38.205808', 'shadoouuww@gmail.com');
-INSERT INTO app.submissions (id, created_at, frequency, itch_level, notes, pill_count, severity, updated_at, user_id) VALUES (4, '2026-06-06 10:51:56.266425', 'morning', 5, '', 2, 'moderate', '2026-06-06 10:51:56.266425', 'shadoouuww@gmail.com');
-INSERT INTO app.submissions (id, created_at, frequency, itch_level, notes, pill_count, severity, updated_at, user_id) VALUES (5, '2026-06-14 10:15:35.333201', 'morning', 2, '', 2, 'moderate', '2026-06-14 10:15:35.333201', 'shadoouuww@gmail.com');
-INSERT INTO app.submissions (id, created_at, frequency, itch_level, notes, pill_count, severity, updated_at, user_id) VALUES (6, '2026-06-14 10:48:54.654702', 'morning', 5, '', 3, 'moderate', '2026-06-14 10:48:54.654702', 'shadoouuww@gmail.com');
+INSERT INTO submissions (id, created_at, frequency, itch_level, notes, pill_count, severity, updated_at, user_id) VALUES (1, '2026-05-28 12:06:27.207219', 'morning', 5, '', 3, 'moderate', '2026-05-28 12:06:27.207219', 'shadoouuww@gmail.com');
+INSERT INTO submissions (id, created_at, frequency, itch_level, notes, pill_count, severity, updated_at, user_id) VALUES (2, '2026-05-28 13:00:26.419030', 'morning', 10, '', 2, 'moderate', '2026-05-28 13:00:26.419030', 'shadoouuww@gmail.com');
+INSERT INTO submissions (id, created_at, frequency, itch_level, notes, pill_count, severity, updated_at, user_id) VALUES (3, '2026-06-06 10:18:38.205808', 'morning', 6, 'Stressante ', 2, 'moderate', '2026-06-06 10:18:38.205808', 'shadoouuww@gmail.com');
+INSERT INTO submissions (id, created_at, frequency, itch_level, notes, pill_count, severity, updated_at, user_id) VALUES (4, '2026-06-06 10:51:56.266425', 'morning', 5, '', 2, 'moderate', '2026-06-06 10:51:56.266425', 'shadoouuww@gmail.com');
+INSERT INTO submissions (id, created_at, frequency, itch_level, notes, pill_count, severity, updated_at, user_id) VALUES (5, '2026-06-14 10:15:35.333201', 'morning', 2, '', 2, 'moderate', '2026-06-14 10:15:35.333201', 'shadoouuww@gmail.com');
+INSERT INTO submissions (id, created_at, frequency, itch_level, notes, pill_count, severity, updated_at, user_id) VALUES (6, '2026-06-14 10:48:54.654702', 'morning', 5, '', 3, 'moderate', '2026-06-14 10:48:54.654702', 'shadoouuww@gmail.com');

@@ -37,7 +37,7 @@ public class BilanRequest {
 
     private Map<String, Boolean> bodyParts;
 
-    private Map<String, Integer> symptoms;
+    private List<String> alertSymptoms;
 
     @NotNull(message = "includeSelfies is required")
     private Boolean includeSelfies;
@@ -48,4 +48,40 @@ public class BilanRequest {
     private Boolean includeQol;
 
     private List<Integer> qolAnswers;
+
+    private Integer attachmentCount;
+
+    private Boolean includeTraitement;
+
+    private String traitementType;
+
+    private String traitementRubrique;
+
+    private String traitementMedicament;
+
+    private String traitementPrecision;
+
+    private String traitementFrequence;
+
+    private Double traitementComprimes;
+
+    private Double traitementPuissanceMg;
+
+    private Double traitementDoseValue;
+
+    private String traitementDoseUnit;
+
+    private Boolean includeInjection;
+
+    private String injectionRubrique;
+
+    private String injectionPrecision;
+
+    private String injectionFrequence;
+
+    private Integer injectionFrequenceSemaines;
+
+    private Double injectionDoseValue;
+
+    private String injectionDoseUnit;
 }

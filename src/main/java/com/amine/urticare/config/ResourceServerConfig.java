@@ -56,9 +56,11 @@ public class ResourceServerConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/actuator/**", "/swagger-ui.html", "/swagger-ui/**", "/v3/api-docs/**",
-                                "/swagger-resources/**", "/api-docs/**", "/oauth/**",
+                                "/swagger-resources/**", "/api-docs/**", "/oauth/**", "/uploads/**",
                                 "/api/patients/**", "/api/bilans/**", "/api/recovery/**",
-                                "/api/chat/message", "/api/appointments/**").permitAll()
+                                "/api/chat/message", "/api/appointments/**",
+                                "/api/antihistaminiques/**", "/api/gouvernorats/**",
+                                "/api/hospitals/**", "/api/specialites/**").permitAll()
                         .anyRequest().authenticated()// all others require token
                 )
                 .oauth2ResourceServer(oauth2 -> oauth2

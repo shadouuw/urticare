@@ -13,9 +13,9 @@ create table innorp007t_actions
 alter table innorp007t_actions
     owner to postgres;
 
-INSERT INTO app.innorp007t_actions (innorp007_id, innorp007_name, innorp007_description, innorp007_created_at) VALUES (1, 'READ', 'Read access', '2025-10-07 15:54:52.994578');
-INSERT INTO app.innorp007t_actions (innorp007_id, innorp007_name, innorp007_description, innorp007_created_at) VALUES (2, 'CREATE', 'Create new records', '2025-10-07 15:54:52.994578');
-INSERT INTO app.innorp007t_actions (innorp007_id, innorp007_name, innorp007_description, innorp007_created_at) VALUES (3, 'UPDATE', 'Update existing records', '2025-10-07 15:54:52.994578');
-INSERT INTO app.innorp007t_actions (innorp007_id, innorp007_name, innorp007_description, innorp007_created_at) VALUES (4, 'DELETE', 'Delete records', '2025-10-07 15:54:52.994578');
-INSERT INTO app.innorp007t_actions (innorp007_id, innorp007_name, innorp007_description, innorp007_created_at) VALUES (5, 'APPROVE', 'Approve requests', '2025-10-07 15:54:52.994578');
-INSERT INTO app.innorp007t_actions (innorp007_id, innorp007_name, innorp007_description, innorp007_created_at) VALUES (6, 'EXPORT', 'Export data', '2025-10-07 15:54:52.994578');
+INSERT INTO innorp007t_actions (innorp007_id, innorp007_name, innorp007_description, innorp007_created_at) VALUES (1, 'READ', 'Read access', '2025-10-07 15:54:52.994578');
+INSERT INTO innorp007t_actions (innorp007_id, innorp007_name, innorp007_description, innorp007_created_at) VALUES (2, 'CREATE', 'Create new records', '2025-10-07 15:54:52.994578');
+INSERT INTO innorp007t_actions (innorp007_id, innorp007_name, innorp007_description, innorp007_created_at) VALUES (3, 'UPDATE', 'Update existing records', '2025-10-07 15:54:52.994578');
+INSERT INTO innorp007t_actions (innorp007_id, innorp007_name, innorp007_description, innorp007_created_at) VALUES (4, 'DELETE', 'Delete records', '2025-10-07 15:54:52.994578');
+INSERT INTO innorp007t_actions (innorp007_id, innorp007_name, innorp007_description, innorp007_created_at) VALUES (5, 'APPROVE', 'Approve requests', '2025-10-07 15:54:52.994578');
+INSERT INTO innorp007t_actions (innorp007_id, innorp007_name, innorp007_description, innorp007_created_at) VALUES (6, 'EXPORT', 'Export data', '2025-10-07 15:54:52.994578');

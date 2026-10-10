@@ -28,6 +28,14 @@ public class PatientServiceImpl implements IPatientService {
         profile.setLastname(request.getLastname());
         profile.setPhone(request.getPhone());
         profile.setRegion(request.getRegion());
+        profile.setAge(request.getAge());
+        profile.setWeight(request.getWeight());
+        profile.setGouvernorat(request.getGouvernorat());
+        profile.setCountry(request.getCountry());
+        profile.setSuiviType(request.getSuiviType());
+        profile.setHospital(request.getHospital());
+        profile.setDoctorName(request.getDoctorName());
+        profile.setDoctorSpecialty(request.getDoctorSpecialty());
 
         PatientProfile saved = patientProfileRepository.save(profile);
         return toResponse(saved);
@@ -41,6 +49,14 @@ public class PatientServiceImpl implements IPatientService {
         r.setLastname(p.getLastname());
         r.setPhone(p.getPhone());
         r.setRegion(p.getRegion());
+        r.setAge(p.getAge());
+        r.setWeight(p.getWeight());
+        r.setGouvernorat(p.getGouvernorat());
+        r.setCountry(p.getCountry());
+        r.setSuiviType(p.getSuiviType());
+        r.setHospital(p.getHospital());
+        r.setDoctorName(p.getDoctorName());
+        r.setDoctorSpecialty(p.getDoctorSpecialty());
         r.setCreatedAt(p.getCreatedAt());
         r.setUpdatedAt(p.getUpdatedAt());
         return r;

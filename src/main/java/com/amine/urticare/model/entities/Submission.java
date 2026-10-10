@@ -15,7 +15,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "submissions", schema = "app")
+@Table(name = "submissions", schema = "public")
 public class Submission {
 
     @Id
@@ -40,7 +40,7 @@ public class Submission {
     @ElementCollection
     @CollectionTable(
             name = "submission_affected_areas",
-            schema = "app",
+            schema = "public",
             joinColumns = @JoinColumn(name = "submission_id")
     )
     @Column(name = "area")

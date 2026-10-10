@@ -123,6 +123,14 @@ public class RecoveryServiceImpl implements IRecoveryService {
         r.setLastname(p.getLastname());
         r.setPhone(p.getPhone());
         r.setRegion(p.getRegion());
+        r.setAge(p.getAge());
+        r.setWeight(p.getWeight());
+        r.setGouvernorat(p.getGouvernorat());
+        r.setCountry(p.getCountry());
+        r.setSuiviType(p.getSuiviType());
+        r.setHospital(p.getHospital());
+        r.setDoctorName(p.getDoctorName());
+        r.setDoctorSpecialty(p.getDoctorSpecialty());
         r.setCreatedAt(p.getCreatedAt());
         r.setUpdatedAt(p.getUpdatedAt());
         return r;

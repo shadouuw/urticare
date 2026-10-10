@@ -20,4 +20,4 @@ create index idx_user_roles_role_id
 create index idx_user_roles_user_id
     on innorp003t_user_account_mapping (innorp001_account_id);
 
-INSERT INTO app.innorp003t_user_account_mapping (innorp001_account_id, innorp002_role_id) VALUES (1, 1);
+INSERT INTO innorp003t_user_account_mapping (innorp001_account_id, innorp002_role_id) VALUES (1, 1);

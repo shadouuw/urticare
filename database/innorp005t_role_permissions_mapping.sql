@@ -21,16 +21,16 @@ create index idx_role_permissions_permission_id
 create index idx_role_permissions_role_id
     on innorp005t_role_permissions_mapping (innorp002_role_id);
 
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (1, 1);
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (1, 2);
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (1, 3);
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (1, 4);
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (1, 5);
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (2, 1);
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (2, 2);
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (2, 3);
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (3, 2);
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (3, 3);
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (3, 4);
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (4, 2);
-INSERT INTO app.innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (4, 1);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (1, 1);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (1, 2);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (1, 3);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (1, 4);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (1, 5);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (2, 1);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (2, 2);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (2, 3);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (3, 2);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (3, 3);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (3, 4);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (4, 2);
+INSERT INTO innorp005t_role_permissions_mapping (innorp002_role_id, innorp004_permission_id) VALUES (4, 1);

@@ -19,6 +19,14 @@ public class PatientProfileResponse {
     private String lastname;
     private String phone;
     private String region;
+    private Integer age;
+    private Double weight;
+    private String gouvernorat;
+    private String country;
+    private String suiviType;
+    private String hospital;
+    private String doctorName;
+    private String doctorSpecialty;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 }

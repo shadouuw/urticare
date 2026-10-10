@@ -10,11 +10,16 @@ create table patient_profiles
     lastname   varchar(255),
     phone      varchar(255),
     region     varchar(255),
+    age        integer,
+    weight     double precision,
+    gouvernorat varchar(255),
+    country    varchar(255),
+    suivi_type varchar(255),
+    hospital   varchar(255),
+    doctor_name varchar(255),
+    doctor_specialty varchar(255),
     updated_at timestamp(6)
 );
 
 alter table patient_profiles
     owner to postgres;
-
-INSERT INTO app.patient_profiles (id, created_at, email, firstname, lastname, phone, region, updated_at) VALUES (2, '2026-07-05 21:56:03.662439', 'claude-test@example.com', 'Test', 'User', '12345678', 'Tunis', '2026-07-05 21:56:03.662439');
-INSERT INTO app.patient_profiles (id, created_at, email, firstname, lastname, phone, region, updated_at) VALUES (1, '2026-07-05 21:39:41.248078', 'mde@wevioo.com', 'Amine', 'Messaoudi', '26137637', 'Tunis', '2026-07-06 00:28:23.129445');

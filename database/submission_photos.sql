@@ -15,4 +15,4 @@ create table submission_photos
 alter table submission_photos
     owner to postgres;
 
-INSERT INTO app.submission_photos (id, content_type, created_at, file_size, filename, url, submission_id) VALUES (1, 'image/png', '2026-05-28 13:00:26.448120', 65970, 'logo.png', 'http://local&host:8080/uploads/shadoouuww@gmail.com/592b5d51-e807-4bcd-87af-3b5f163efb8a.png', 2);
+INSERT INTO submission_photos (id, content_type, created_at, file_size, filename, url, submission_id) VALUES (1, 'image/png', '2026-05-28 13:00:26.448120', 65970, 'logo.png', 'http://local&host:8080/uploads/shadoouuww@gmail.com/592b5d51-e807-4bcd-87af-3b5f163efb8a.png', 2);

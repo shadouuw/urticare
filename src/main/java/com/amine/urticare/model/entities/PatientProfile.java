@@ -9,7 +9,7 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "patient_profiles", schema = "app")
+@Table(name = "patient_profiles", schema = "public")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -30,6 +30,28 @@ public class PatientProfile {
     private String phone;
 
     private String region;
+
+    private Integer age;
+
+    // Weight in kg — used to compute the ciclosporine weight-based target
+    // dose (5mg/kg/day), see TraitementServiceImpl / the Flutter oral form.
+    private Double weight;
+
+    private String gouvernorat;
+
+    private String country;
+
+    // 'public' | 'private' — which hospital list to offer in the app.
+    @Column(name = "suivi_type")
+    private String suiviType;
+
+    private String hospital;
+
+    @Column(name = "doctor_name")
+    private String doctorName;
+
+    @Column(name = "doctor_specialty")
+    private String doctorSpecialty;
 
     @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;

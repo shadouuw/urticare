@@ -17,4 +17,4 @@ create table suivis
 alter table suivis
     owner to postgres;
 
-INSERT INTO app.suivis (id, created_at, doctor_name, dosage, end_date, is_active, notes, pills_per_day, start_date, treatment_name, user_id) VALUES (1, '2026-06-06 10:51:25.153392', 'Dr Meriem Zidi', '5', '2026-06-30', true, 'Alergie urticare avancé', 2, '2026-06-03', 'Urticare', 'shadoouuww@gmail.com');
+INSERT INTO suivis (id, created_at, doctor_name, dosage, end_date, is_active, notes, pills_per_day, start_date, treatment_name, user_id) VALUES (1, '2026-06-06 10:51:25.153392', 'Dr Meriem Zidi', '5', '2026-06-30', true, 'Alergie urticare avancé', 2, '2026-06-03', 'Urticare', 'shadoouuww@gmail.com');

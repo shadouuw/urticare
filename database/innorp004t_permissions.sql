@@ -14,8 +14,8 @@ create table innorp004t_permissions
 alter table innorp004t_permissions
     owner to postgres;
 
-INSERT INTO app.innorp004t_permissions (innorp004_id, innorp004_name, innorp004_description, innorp004_resource_type, innorp004_created_at) VALUES (1, 'USER_MANAGEMENT', 'Manage users', 'USER', '2025-10-07 15:54:53.130458');
-INSERT INTO app.innorp004t_permissions (innorp004_id, innorp004_name, innorp004_description, innorp004_resource_type, innorp004_created_at) VALUES (2, 'ORDER_MANAGEMENT', 'Manage orders', 'ORDER', '2025-10-07 15:54:53.130458');
-INSERT INTO app.innorp004t_permissions (innorp004_id, innorp004_name, innorp004_description, innorp004_resource_type, innorp004_created_at) VALUES (3, 'PRODUCT_MANAGEMENT', 'Manage products', 'PRODUCT', '2025-10-07 15:54:53.130458');
-INSERT INTO app.innorp004t_permissions (innorp004_id, innorp004_name, innorp004_description, innorp004_resource_type, innorp004_created_at) VALUES (4, 'REPORT_VIEW', 'View reports', 'REPORT', '2025-10-07 15:54:53.130458');
-INSERT INTO app.innorp004t_permissions (innorp004_id, innorp004_name, innorp004_description, innorp004_resource_type, innorp004_created_at) VALUES (5, 'SETTINGS_MANAGEMENT', 'Manage system settings', 'SETTINGS', '2025-10-07 15:54:53.130458');
+INSERT INTO innorp004t_permissions (innorp004_id, innorp004_name, innorp004_description, innorp004_resource_type, innorp004_created_at) VALUES (1, 'USER_MANAGEMENT', 'Manage users', 'USER', '2025-10-07 15:54:53.130458');
+INSERT INTO innorp004t_permissions (innorp004_id, innorp004_name, innorp004_description, innorp004_resource_type, innorp004_created_at) VALUES (2, 'ORDER_MANAGEMENT', 'Manage orders', 'ORDER', '2025-10-07 15:54:53.130458');
+INSERT INTO innorp004t_permissions (innorp004_id, innorp004_name, innorp004_description, innorp004_resource_type, innorp004_created_at) VALUES (3, 'PRODUCT_MANAGEMENT', 'Manage products', 'PRODUCT', '2025-10-07 15:54:53.130458');
+INSERT INTO innorp004t_permissions (innorp004_id, innorp004_name, innorp004_description, innorp004_resource_type, innorp004_created_at) VALUES (4, 'REPORT_VIEW', 'View reports', 'REPORT', '2025-10-07 15:54:53.130458');
+INSERT INTO innorp004t_permissions (innorp004_id, innorp004_name, innorp004_description, innorp004_resource_type, innorp004_created_at) VALUES (5, 'SETTINGS_MANAGEMENT', 'Manage system settings', 'SETTINGS', '2025-10-07 15:54:53.130458');

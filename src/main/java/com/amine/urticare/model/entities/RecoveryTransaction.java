@@ -13,7 +13,7 @@ import lombok.Setter;
 import java.time.Instant;
 
 @Entity
-@Table(name = "recovery_transactions", schema = "app")
+@Table(name = "recovery_transactions", schema = "public")
 @Getter
 @Setter
 @NoArgsConstructor

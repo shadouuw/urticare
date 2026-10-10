@@ -15,6 +15,22 @@ create table bilans
     qol_answers_json text,
     selfie_count     integer,
     symptoms_json    text,
+    include_traitement boolean,
+    traitement_type varchar(255),
+    traitement_rubrique varchar(255),
+    traitement_medicament varchar(255),
+    traitement_precision varchar(255),
+    traitement_frequence varchar(255),
+    traitement_comprimes double precision,
+    traitement_dose_value double precision,
+    traitement_dose_unit varchar(255),
+    include_injection boolean,
+    injection_rubrique varchar(255),
+    injection_precision varchar(255),
+    injection_frequence varchar(255),
+    injection_frequence_semaines integer,
+    injection_dose_value double precision,
+    injection_dose_unit varchar(255),
     constraint uk_bilans_patient_email_date
         unique (patient_email, date)
 );
