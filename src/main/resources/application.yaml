@@ -4,7 +4,7 @@ spring:
 
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://${DB_HOST:197.5.144.15}:${DB_PORT:5432}/${DB_NAME:Database@Secure2025}?sslmode=${DB_SSLMODE:disable}&currentSchema=public
+    url: jdbc:postgresql://${DB_HOST:197.5.144.15}:${DB_PORT:5432}/${DB_NAME:appdb}?sslmode=${DB_SSLMODE:disable}&currentSchema=public
     username: ${DB_USERNAME:appuser}
     password: ${DB_PASSWORD:Database@Secure2025}
 
